@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Resume</h1>
+        <form id="resume-form">
+            <div class="input-group">
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="input-group">
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" placeholder="Enter your degree" required>
+            </div>
+            <div class="input-group">
+                <label for="school">School:</label>
+                <input type="text" id="school" placeholder="Enter your school" required>
+            </div>
+            <div class="input-group">
+                <label for="experience">Work Experience:</label>
+                <textarea id="experience" placeholder="Describe your work experience" required></textarea>
+            </div>
+            <div class="input-group">
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" placeholder="List your skills" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">Generate Resume</button>
+            </div>
+        </form>
+
+        <div id="resume-output" class="output">
+            <h2>Your Resume</h2>
+            <img id="resume-photo" src="" alt="Profile Photo">
+            <p><strong>Name:</strong> <span id="output-name"></span></p>
+            <p><strong>Email:</strong> <span id="output-email"></span></p>
+            <p><strong>Phone:</strong> <span id="output-phone"></span></p>
+            <p><strong>Degree:</strong> <span id="output-degree"></span></p>
+            <p><strong>School:</strong> <span id="output-school"></span></p>
+            <p><strong>Experience:</strong> <span id="output-experience"></span></p>
+            <p><strong>Skills:</strong> <span id="output-skills"></span></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

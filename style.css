@@ -1,0 +1,195 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background-color: #b3b2b2;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #4a4545;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #2d2727;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+/* Submit Button */
+button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+/* Resume Output Section */
+.output {
+    margin-top: 30px;
+    text-align: left;
+    display: none;
+}
+
+.output h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.output img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.output p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.output p span {
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea, button {
+        font-size: 1rem;
+    }
+
+    .output p, .output h2 {
+        font-size: 1.1rem;
+    }
+
+    .output img {
+        max-width: 100px;
+    }
+}
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea, button {
+        font-size: 1.1rem;
+    }
+
+    .output p, .output h2 {
+        font-size: 1.2rem;
+    }
+
+    .output img {
+        max-width: 120px;
+    }
+}
+
+/* Desktop Devices */
+@media (min-width: 1024px) {
+    .container {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea, button {
+        font-size: 1.1rem;
+    }
+
+    .output p, .output h2 {
+        font-size: 1.3rem;
+    }
+
+    .output img {
+        max-width: 150px;
+    }
+}
